@@ -39,7 +39,7 @@ console.log('watermark: Start');
   /**
    * register the thubmnails plugin
    */
-  videojs.plugin('watermark', function(settings) {
+  videojs.registerPlugin('watermark', function(settings) {
     if (settings.debug) console.log('watermark: Register init');
 
     var options, player, video, img, link;
